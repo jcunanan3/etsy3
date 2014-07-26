@@ -1,0 +1,24 @@
+<div id="accordion">
+{% for listing in shop_array %}
+{#    <div class="listingInfo">#}
+
+
+        <h3 class="ui-accordion-header">
+            <div id="listTitle">{{ listing.title }}</div>
+        </h3>
+        <div class="ui-accordion-content">
+            <div id="listID">{{ listing.id }}</div>
+            <button id="favorite">favorite</button>
+
+            <p>
+                Price: {{ listing.price }}
+            </p>
+            <p>
+                Description: {{ listing.description }}
+            </p>
+        </div>
+
+
+{#    </div>#}
+{% endfor %}
+</div>
